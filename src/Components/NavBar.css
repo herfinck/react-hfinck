@@ -4,13 +4,16 @@ header, nav{
     justify-content: space-around;
     align-items: center;
     text-decoration: none;
+    width: 100%;
 }
 
 img{ 
-    width: 20%;
+    margin: 1px;
+    width: 15%;
 }
 .img2{
-    width: 5%
+    margin: 1px;
+    width: 3%;
 }
 
 a {
