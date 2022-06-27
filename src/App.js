@@ -3,7 +3,9 @@ import './App.css';
 import NavBar from './Components/NavBar.jsx';
 import ItemListContainer from './Components/ItemListContainer'
 
+
 const App = () => {
+  
   return(
     <>
     <NavBar />

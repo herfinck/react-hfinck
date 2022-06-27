@@ -1,13 +1,23 @@
-import React from 'react';
+import React from 'react'
+import ItemCount from './ItemCount'
 
-function Item({ value }) {
-    return (
-        <li>
-            <a href="#!">
-                {value}
-            </a>
-        </li>
-    );
-}
+const ItemListContainer = ({ value }) => {
+    const stock = 5
+    const Inicial= 1
   
-  export default Item
+    const onAdd = (cantidad) => {
+        console.log(cantidad);
+    }
+
+    
+    return (
+        <>
+            <div>ItemListContainer</div>
+            <div> {value} </div>
+            <ItemCount stock={stock} inicial={Inicial} onAdd={onAdd}/>
+        </>
+         
+    )
+}
+
+export default ItemListContainer
