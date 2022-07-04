@@ -1,10 +1,10 @@
 import React from 'react';
-
+import '../NavBar/NavBar.css';
 
 export const CartWidget = ({carro}) => {
    return (
    <>
-     <img class="img2" src={carro} alt="" />
+     <img className="img2" src={carro} alt="" />
    </>)
 }
 

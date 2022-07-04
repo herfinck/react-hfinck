@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from '../assets/logoff.png';
+import logo from '../../assets/logoff.png';
 import './NavBar.css';
-import carrito from '../assets/carrito.png';
-import {CartWidget} from './CartWidget';
+import carrito from '../../assets/carrito.png';
+import {CartWidget} from '../CartWidget/CartWidget';
 
 
 function NavBar() {
