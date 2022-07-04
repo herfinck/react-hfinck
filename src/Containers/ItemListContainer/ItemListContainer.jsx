@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react';
 import ItemCount from '../../Components/ItemCount/ItemCount'
-
+import pictureUrl1 from '../../assets/remeramujer.png'
+import pictureUrl2 from '../../assets/remerahombre.png'
+import pictureUrl3 from '../../assets/camperamujer.png'
+import pictureUrl4 from '../../assets/camperahombre.png'
 
 const initialProducts = [
-    {id: 1, name: 'Remera Mujer', price: 1900, stock: 10, pictureUrl: '../../assets/remeramujer.png'},
-    {id: 2, name: 'Remera Hombre', price: 1900, stock: 15, pictureUrl: '../../assets/remerhombre.png'},
-    {id: 3, name: 'Campera Mujer', price: 4700, stock: 20, pictureUrl: '../../assets/camperamujer.png'},
-    {id: 4, name: 'Campera Hombre', price: 4700, stock: 30, pictureUrl: '../../assets/camperahombre.png'},
+    {id: 1, name: 'Remera Mujer', price: 1900, stock: 10, pictureUrl: pictureUrl1},
+    {id: 2, name: 'Remera Hombre', price: 1900, stock: 15, pictureUrl: pictureUrl2},
+    {id: 3, name: 'Campera Mujer', price: 4700, stock: 20, pictureUrl: pictureUrl3},
+    {id: 4, name: 'Campera Hombre', price: 4700, stock: 30, pictureUrl: pictureUrl4},
 ]
+
 
 console.log(initialProducts)
 
