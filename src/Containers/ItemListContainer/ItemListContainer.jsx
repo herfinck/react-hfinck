@@ -49,9 +49,15 @@ const ItemListContainer = ({ value }) => {
             <h1 style={style.container}>{value}</h1>;
             <div> {value} </div>;
             <ItemCount stock={10} inicial={1} onAdd={onAdd}/>
-            {products.map((product) => <h2 style={style.container} key={product.id}>{product.name} </h2> )}
-            {products.map((product) => <h3 style={style.container} key={product.id}>Valor $ {product.price} </h3>)}
-            {products.map((product) => <div key={product.id}> <img src={product.pictureUrl} alt={product.name} /></div>)}
+            {products.map((product) => 
+            <>
+                <h2 style={style.container} key={product.id}>{product.name} </h2>
+                <h3 style={style.container} key={product.id}>Valor $ {product.price} </h3>
+                <div style={style.container} key={product.id}>
+                     <img src={product.pictureUrl} alt={product.name} />
+                </div>
+            </>
+            )}
         </>
          
     )
@@ -65,6 +71,9 @@ const style = {
         justifyContent: 'space-between',
         alignItems: 'center',
         paddingLeft: 50,
-        paddingright: 50
-    }
+        paddingright: 50,
+        
+    }  
 }
+
+
